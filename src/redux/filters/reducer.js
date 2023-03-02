@@ -10,6 +10,7 @@ const reducer = (state = initialState, action) => {
             }
         case COLORCHENGED:
             const { chengType, color } = action.payload;
+            console.log(chengType)
             switch (chengType) {
                 case "added":
                     return {
