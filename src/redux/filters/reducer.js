@@ -1,15 +1,15 @@
 import { COLORCHENGED, STATUSCHENGED } from "./actionTypes";
-import { initialStae } from "./initialState";
+import initialState from "./initialState";
 
-const reducer = (state = initialStae, action) => {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         case STATUSCHENGED:
             return {
                 ...state,
-                status: action.paylod
+                status: action.payload
             }
         case COLORCHENGED:
-            const { chengType, color } = action.paylod;
+            const { chengType, color } = action.payload;
             switch (chengType) {
                 case "added":
                     return {

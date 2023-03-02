@@ -1,4 +1,6 @@
-export const initialStae = {
+const initialStae = {
     status: "All",
     colors: []
 };
+
+export default initialStae;

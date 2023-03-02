@@ -1,11 +1,5 @@
 import { COLORCHENGED, STATUSCHENGED } from "./actionTypes"
 
-export const statusChenged = (status) => {
-    return {
-        type: STATUSCHENGED,
-        payload: status
-    }
-};
 export const colorChenged = (color, chengType) => {
     return {
         type: COLORCHENGED,
@@ -13,5 +7,12 @@ export const colorChenged = (color, chengType) => {
             color,
             chengType
         }
+    }
+};
+
+export const statusChenged = (status) => {
+    return {
+        type: STATUSCHENGED,
+        payload: status,
     }
 };
